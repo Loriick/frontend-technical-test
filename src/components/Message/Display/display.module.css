@@ -1,0 +1,23 @@
+.display {
+  height: 90%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.message {
+  height: auto;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 2rem;
+  max-width: fit-content;
+  font-size: 1rem;
+}
+
+.authored {
+  background-color: #4f9dde;
+  margin-left: auto;
+}
+
+.received {
+  background-color: #bfbdbd;
+}

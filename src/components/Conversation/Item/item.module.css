@@ -1,0 +1,23 @@
+.item {
+  height: 5rem;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px #cbd2d0 solid;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+}
+
+.item__avatar {
+  height: 100%;
+  width: 40%;
+}
+
+.item__info {
+  height: 100%;
+  width: 40%;
+}
+
+.item__delete {
+  height: 100%;
+  width: 30%;
+}

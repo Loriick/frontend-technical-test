@@ -1,0 +1,12 @@
+.messageList {
+  width: 100%;
+  height: 90%;
+  background-color: #cbd2d0;
+}
+
+@media screen and (min-width: 800px) {
+  .messageList {
+    width: 30%;
+    height: 100%;
+  }
+}

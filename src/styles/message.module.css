@@ -1,0 +1,23 @@
+.message__container {
+  height: 100vh;
+  width: 100%;
+}
+
+.message__displayContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.message__display {
+  height: 90%;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .message__container {
+    display: flex;
+  }
+  .message__displayContainer {
+    width: 70%;
+  }
+}
