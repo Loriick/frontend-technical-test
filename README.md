@@ -1,3 +1,15 @@
+# What I did
+
+ - Display conversation list
+ - Display a conversation between two users
+ - Allow to post a new message
+ - A responsive Application
+ - An accessible app
+ - Tested App
+ - Normally with good performance
+
+ 
+
 # Context :
 
 At leboncoin, our users can share messages about a transaction, or ask for informations about any products.

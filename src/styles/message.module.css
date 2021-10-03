@@ -8,11 +8,6 @@
   width: 100%;
 }
 
-.message__display {
-  height: 90%;
-  width: 100%;
-}
-
 @media screen and (min-width: 800px) {
   .message__container {
     display: flex;

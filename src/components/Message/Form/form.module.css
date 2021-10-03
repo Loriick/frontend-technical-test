@@ -17,6 +17,10 @@
   border: none;
 }
 
+.input:focus{
+  outline: 3px solid #eb8908;
+}
+
 .button {
   height: 2.5rem;
   width: 2.5rem;
@@ -24,4 +28,12 @@
   outline: none;
   border: none;
   background-color: #4f9dde;
+}
+
+.button:disabled {
+  background-color: #8bbce4;
+}
+
+.button:focus {
+  outline: 3px solid #eb8908;
 }

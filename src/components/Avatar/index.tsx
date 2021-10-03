@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Center from '../Center';
+import styles from "./avatar.module.css"
 
-export default function Avatar() {
+export default function Avatar({name}) {
     return (
-        <div>
-            
+        <div className={styles.avatar}>
+            <Center>
+            {name[0]}
+            </Center>
         </div>
     )
 }

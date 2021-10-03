@@ -5,11 +5,16 @@
   border-bottom: 1px #cbd2d0 solid;
   padding: 0.8rem 1.5rem;
   display: flex;
+  cursor: pointer;
+}
+
+.item:focus {
+  outline: 3px solid #eb8908;
 }
 
 .item__avatar {
   height: 100%;
-  width: 40%;
+  width: 20%;
 }
 
 .item__info {
