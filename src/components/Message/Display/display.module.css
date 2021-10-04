@@ -17,8 +17,8 @@
   width: 20rem;
 }
 
-.message:not(:last-child){
-  margin-bottom: .5rem;
+.message:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 .authored {

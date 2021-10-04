@@ -1,7 +1,12 @@
 import React from 'react';
+import { Message } from '../../../types/message';
 import styles from './display.module.css';
 
-export default function chatDisplay({ messages }: any) {
+type ChatDisplayProps = {
+  messages: Message[];
+};
+
+export default function chatDisplay({ messages }: ChatDisplayProps) {
   return (
     <div className={styles.display}>
       {messages.map((m) => (

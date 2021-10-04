@@ -1,8 +1,9 @@
-export const formatDate = (timestamp: number) =>{
-    const milliseconds = timestamp * 1000;
+export const formatDate = (timestamp: number): string => {
+  const milliseconds = timestamp * 1000;
 
- return new Date(milliseconds).toLocaleDateString('fr-FR', {
+  return new Date(milliseconds).toLocaleDateString('fr-FR', {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
-  })};
+  });
+};

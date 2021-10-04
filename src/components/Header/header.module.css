@@ -14,21 +14,19 @@
   text-align: center;
 }
 
-
 .button {
   background-color: unset;
   border: none;
   outline: none;
   width: 5rem;
   cursor: pointer;
-  
 }
 
 .button:active {
   outline: none;
 }
 
-.back{
+.back {
   grid-column: 1/2;
   justify-content: start;
 }

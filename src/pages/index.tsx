@@ -5,7 +5,6 @@ import Header from '../components/Header';
 import { useWindowSize } from '../hooks';
 import styles from '../styles/conversation.module.css';
 import { Conversation } from '../types/conversation';
-import { User } from '../types/user';
 import http from '../utils/http';
 import { loggedUserId } from './_app';
 

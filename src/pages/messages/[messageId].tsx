@@ -1,17 +1,17 @@
 import { useRouter } from 'next/router';
-import MessageList from '../../components/Conversation/List';
 
+import MessageList from '../../components/Conversation/List';
 import Header from '../../components/Header';
 import Chat from '../../components/Message/Chat';
+import { loggedUserId } from '../_app';
 
-import { useWindowSize } from '../../hooks';
-
-import styles from '../../styles/message.module.css';
-import { Conversation } from '../../types/conversation';
-import { Message } from '../../types/message';
 import { getUserName } from '../../utils/getUserName';
 import http from '../../utils/http';
-import { loggedUserId } from '../_app';
+import { useWindowSize } from '../../hooks';
+import { Conversation } from '../../types/conversation';
+import { Message } from '../../types/message';
+
+import styles from '../../styles/message.module.css';
 
 type ConversationProps = {
   messages: Message[];
@@ -19,7 +19,7 @@ type ConversationProps = {
   conversationStatus: number;
 };
 
-export default function MessageView({
+export default function MessagePage({
   messages,
   conversationList,
   conversationStatus,
@@ -62,7 +62,9 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: {
+  params: { messageId: string };
+}) {
   const { data: conversationList, status: conversationStatus } =
     await http.getById('conversations', loggedUserId);
   const { data: messages } = await http.getById(

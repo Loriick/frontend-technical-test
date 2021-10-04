@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { useWindowSize } from '../../../hooks';
 import { Conversation } from '../../../types/conversation';
 import { getUserName } from '../../../utils/getUserName';
@@ -13,10 +13,7 @@ type MessageListProps = {
   status: number;
 };
 
-export default function MessageList({
-  conversationList,
-  status,
-}: MessageListProps) {
+export default function MessageList({ conversationList, status }: MessageListProps) {
   const { isLargeScreen } = useWindowSize();
 
   const displayErrorBanner = useMemo(

@@ -14,7 +14,7 @@ export default function Form({
   handleChange,
   handleSubmit,
 }: FormProps) {
-  
+
   return (
     <form data-testid="form" className={styles.form} onSubmit={handleSubmit}>
       <Center>

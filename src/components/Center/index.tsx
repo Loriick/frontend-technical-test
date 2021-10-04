@@ -1,16 +1,11 @@
 import React, { ReactNode } from 'react';
 
-import styles from "./center.module.css";
-
+import styles from './center.module.css';
 
 type CenterProps = {
-    children: ReactNode
-}
+  children: ReactNode;
+};
 
-export default function Center({children}:CenterProps) {
-    return (
-        <div className={styles.center}>
-            {children}
-        </div>
-    )
+export default function Center({ children }: CenterProps) {
+  return <div className={styles.center}>{children}</div>;
 }

@@ -18,7 +18,6 @@ export default function Header({
   const handleGoback = (): void => router.back();
   return (
     <header className={styles.header}>
-
       {showBackButton && (
         <button
           type="button"
@@ -30,9 +29,11 @@ export default function Header({
         </button>
       )}
 
-      {showTitle && <h1 aria-label={title} className={styles.title}>{title}</h1>}
-
-    
+      {showTitle && (
+        <h1 aria-label={title} className={styles.title}>
+          {title}
+        </h1>
+      )}
     </header>
   );
 }
